@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="div1">
+        <div class="section">
+          <img src="Logos_and_images/logoMain.jpg" width="100px" alt="" />
+        </div>
+        <div class="section">
+          <ul>
+            <li><img class="svgs" src="/Logos_and_images/explore-svg.svg" alt=""> Explore</li>
+            <li><img class="svgs" src="/Logos_and_images/radio-svg.svg" alt="">Radio</li>
+            <li><img class="svgs" src="/Logos_and_images/artist-svg.svg" alt="">Artist</li>
+            <li><img class="svgs" src="/Logos_and_images/album-svg.svg" alt="">Album</li>
+          </ul>
+        </div>
+        <div class="section playList">
+          <h2>Your Libarary</h2>
+          <ul>
+            <li>Made for you</li>
+            <li>Recently played</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>Playlist</h2>
+          <ul>
+            <li>Stared</li>
+            <li>Discover weekly</li>
+            <li>Memories</li>
+          </ul>
+           <button id="btn" >Create new playlist</button>
+        </div>
+      </div>
+      <div class="div2"> <audio controls src="/Songs/Chale Jaana .mp3"></audio></div>
+      <div class="div3">
+        <h2>Songs</h2>
+        <div class="songCards">
+            <img  src="Logos_and_images/explore-svg.svg" alt="">
+            <div><span>Name</span><br>
+            <span>arstist</span></div>
+            <span>5:45</span>
+            <img src="Logos_and_images/play-circle-svg.svg" alt="">
+        </div>
+      </div>
+      <div class="div4">
+        <div id="songDetails">
+            <span>Song Name</span><br>
+            <span>Artist</span>
+
+        </div>
+        <div id="playControls" ><img src="Logos_and_images/previous-svg.svg" alt=""><img src="Logos_and_images/play-circle-svg.svg" alt=""><img src="Logos_and_images/next-svg.svg" alt="">
+        </div>
+
+        <div id="progressBar" > <span>0:00</span>
+            <input type="range" name="progressBar" >
+            <span>5:00</span>
+        </div>
+
+        <div id="otherControls" > <img src="Logos_and_images/sound-svg.svg" alt="">
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
